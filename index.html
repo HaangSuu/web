@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoMVC</title>
+  </head>
+
+  <body>
+    <header>
+      <link rel="stylesheet" href="./index.css" />
+      <h1>todos</h1>
+    </header>
+    <main>
+      <form id="todo-form">
+        <input id="todo-input" name="todo-input" type="text" />
+      </form>
+      <ul id="todo-list"></ul>
+
+      <div>
+        <ul>
+          <li>
+            <a href="#"> All </a>
+          </li>
+          <li>
+            <a href="#active"> Active </a>
+          </li>
+          <li>
+            <a href="#completed"> Completed </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.youtube.com/"> 개발자: 엄유한 </a>
+    </footer>
+
+    <template id="todo-item-template">
+      <li class="todo-item">
+        <p></p>
+        <input type="checkbox" />
+        <button>Delete</button>
+      </li>
+    </template>
+
+    <script type="module" src="./index.js" defer="true"></script>
+  </body>
+</html>
